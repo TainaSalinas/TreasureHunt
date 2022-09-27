@@ -3893,7 +3893,6 @@ GameObject:
   m_Component:
   - component: {fileID: 121213837}
   - component: {fileID: 121213839}
-  - component: {fileID: 121213838}
   m_Layer: 0
   m_Name: bowlingball
   m_TagString: Untagged
@@ -3916,22 +3915,6 @@ Transform:
   m_Father: {fileID: 681799787}
   m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &121213838
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 121213836}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.6, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.95
 --- !u!212 &121213839
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19754,6 +19737,7 @@ GameObject:
   - component: {fileID: 800559628}
   - component: {fileID: 800559627}
   - component: {fileID: 800559626}
+  - component: {fileID: 800559629}
   m_Layer: 0
   m_Name: trigger (1)
   m_TagString: Untagged
@@ -19844,6 +19828,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &800559629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800559625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08d29a8ebf5a90e499b371587f103b38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  purpleball: {fileID: 121213836}
 --- !u!1 &810042631
 GameObject:
   m_ObjectHideFlags: 0
