@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class triggerEntrance : MonoBehaviour
 {
-
+    public bool enter;
   
     // Start is called before the first frame update
     void Start()
@@ -16,12 +16,13 @@ public class triggerEntrance : MonoBehaviour
     // Update is called once per frame
     private void OnTriggerEnter2D (Collider2D collision)
     {
-        if (collision.gameObject.name == "trigger")
+        if (collision.gameObject.name == "Square")
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
+         
                 SceneManager.LoadScene("Inside", LoadSceneMode.Single);
-            }
+            
         }
     }
+
+
 }
