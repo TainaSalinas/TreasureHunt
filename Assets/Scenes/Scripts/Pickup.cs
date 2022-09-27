@@ -2,17 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Note : MonoBehaviour
+public class Pickup : MonoBehaviour
 {
-    // Start is called before the first frame update
+
     private bool positive;
-    public GameObject paper;
-    public static float score = 0;
+    public GameObject purpleball;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -28,8 +27,8 @@ public class Note : MonoBehaviour
     {
         if (positive == true && Input.GetKeyDown(KeyCode.E))
         {
-            score = 1;
-            paper.SetActive(false);
+            
+            purpleball.SetActive(false);
         }
     }
 }
