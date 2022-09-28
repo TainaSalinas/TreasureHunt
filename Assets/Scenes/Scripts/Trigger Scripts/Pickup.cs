@@ -7,6 +7,7 @@ public class Pickup : MonoBehaviour
 
     private bool positive;
     public GameObject purpleball;
+    public GameObject dialogue;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +30,7 @@ public class Pickup : MonoBehaviour
         {
             
             purpleball.SetActive(false);
+            dialogue.SetActive(true);
         }
     }
 }
