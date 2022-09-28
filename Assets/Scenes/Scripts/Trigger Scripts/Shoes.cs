@@ -7,6 +7,7 @@ public class Shoes : MonoBehaviour
 
     private bool positive;
     public GameObject bowlingshoes;
+    public GameObject dialogue;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +28,7 @@ public class Shoes : MonoBehaviour
         if (positive == true && Input.GetKeyDown(KeyCode.E))
         {
             bowlingshoes.SetActive(true);
+            dialogue.SetActive(true);
         }
     }
 }

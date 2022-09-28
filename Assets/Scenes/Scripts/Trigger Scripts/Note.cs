@@ -8,6 +8,7 @@ public class Note : MonoBehaviour
     private bool positive;
     public GameObject paper;
     public static float score = 0;
+    public GameObject dialogue;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +31,7 @@ public class Note : MonoBehaviour
         {
             score = 1;
             paper.SetActive(false);
+            dialogue.SetActive(true);
         }
     }
 }
