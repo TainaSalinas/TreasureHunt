@@ -18,8 +18,8 @@ public class Shoes : MonoBehaviour
     {
         if (collision.gameObject.name == "character" && GameManager.Instance.score == 2)
         {
-            positive = true;
             GameManager.Instance.score += 1;
+            positive = true;            
         }
     }
 

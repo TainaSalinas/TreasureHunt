@@ -19,8 +19,8 @@ public class Pickup : MonoBehaviour
     {
         if (collision.gameObject.name == "character" && GameManager.Instance.score == 4)
         {
-            positive = true;
             GameManager.Instance.score += 1;
+            positive = true;            
         }
     }
 

@@ -18,7 +18,8 @@ public class Bowl : MonoBehaviour
     {
         if (collision.gameObject.name == "character" && GameManager.Instance.score == 5)
         {
-            positive = true;
+            GameManager.Instance.score += 1;
+            positive = true;            
         }
     }
 

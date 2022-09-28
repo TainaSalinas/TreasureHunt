@@ -19,8 +19,8 @@ public class Note : MonoBehaviour
     {
         if (collision.gameObject.name == "character" && GameManager.Instance.score == 1)
         {
-            positive = true;
             GameManager.Instance.score += 1;
+            positive = true;            
         }
     }
 

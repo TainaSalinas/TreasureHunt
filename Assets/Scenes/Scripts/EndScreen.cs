@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndScreen : MonoBehaviour
-{
-    public bool positive;
+{ 
     public GameObject purpleball;
 
     // Start is called before the first frame update
@@ -17,7 +17,8 @@ public class EndScreen : MonoBehaviour
     {
         if (collision.gameObject.name == "bowlingball")
         {
-            positive = true;
+            SceneManager.LoadScene("End", LoadSceneMode.Single);
+            Debug.Log("It worked");
         }
     }
 
