@@ -16,7 +16,7 @@ public class Bowl : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "character")
+        if (collision.gameObject.name == "character" && GameManager.Instance.score == 5)
         {
             positive = true;
         }

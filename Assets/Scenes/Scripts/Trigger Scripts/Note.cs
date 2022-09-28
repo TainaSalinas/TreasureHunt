@@ -7,7 +7,6 @@ public class Note : MonoBehaviour
     // Start is called before the first frame update
     private bool positive;
     public GameObject paper;
-    public static float score = 0;
     public GameObject dialogue;
 
     // Start is called before the first frame update
@@ -18,9 +17,10 @@ public class Note : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "character")
+        if (collision.gameObject.name == "character" && GameManager.Instance.score == 1)
         {
             positive = true;
+            GameManager.Instance.score += 1;
         }
     }
 
@@ -29,7 +29,6 @@ public class Note : MonoBehaviour
     {
         if (positive == true && Input.GetKeyDown(KeyCode.E))
         {
-            score = 1;
             paper.SetActive(false);
             dialogue.SetActive(true);
         }

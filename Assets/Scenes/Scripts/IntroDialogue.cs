@@ -20,6 +20,7 @@ public class IntroDialogue : MonoBehaviour
         if (collision.gameObject.name == "character")
         {
             text.SetActive(true);
+            GameManager.Instance.score += 1;
         }
     }
 

@@ -16,9 +16,10 @@ public class Shoes : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "character")
+        if (collision.gameObject.name == "character" && GameManager.Instance.score == 2)
         {
             positive = true;
+            GameManager.Instance.score += 1;
         }
     }
 
